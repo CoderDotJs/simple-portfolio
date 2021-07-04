@@ -18,6 +18,11 @@ section{
 h1{
     font-size: 50px;
 }
+.images{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .orange-text{
     color: orange;
 }
@@ -79,4 +84,55 @@ p{
 footer p{
     text-align: center;
     padding: 15px 0;
+}
+
+        /* Media query */
+
+@media (max-width: 684px) {
+    
+    .flex-display{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    section{
+        height: auto;
+        padding-bottom: 40px;
+    }
+    .section1{
+        padding-bottom: 50px;
+    }
+    h1{
+        font-size: 30px;
+    }
+    .images{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .orange-text{
+        color: orange;
+    }
+    img{
+        width: 100%;
+    }
+    .half{
+        width: 80%;
+        padding: 2% 0 0 0;
+        margin: 5% 0 0 0;
+
+    }
+    .section2{
+        background-position: right 15%;
+    }
+    .section3 .half{
+        padding: 0 10px;
+    }
+    .section2 .half:first-of-type{
+        order: 2;
+    }
+    .section2 .half:last-of-type{
+        order: 1;
+    }
 }
